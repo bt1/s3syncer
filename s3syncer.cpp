@@ -11,16 +11,16 @@ int main()
 	char dir[100];
 	string new_folder;
 	string syncdir;
-    string bkpjob;
+    	string bkpjob;
 	char response[20];
 	string syncjob;
 	cout<<"+++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
-    cout<<"+++++++++++++++S3 Syncer for Linux+++++++++++++++"<<endl;
+    	cout<<"+++++++++++++++S3 Syncer for Linux+++++++++++++++"<<endl;
 	cout<<"+++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
 	cout<<"Make sure you have installed and configured s3cmd.  If not, run $sudo apt-get install s3cmd"<<endl;
 	cout<<"If you have not installed s3cmd and crontab, type 'exit', otherwise:"<<endl;
-    cout<<"Please specify the location of the folder you would like to sync (ie. $HOME/...): ";
-    cin>>dir;
+    	cout<<"Please specify the location of the folder you would like to sync (ie. $HOME/...): ";
+    	cin>>dir;
    	if((strcmp(dir,"exit")==0))
 	{
 		cout<<"Now exiting..."<<endl;
@@ -28,8 +28,8 @@ int main()
 	else
 	{
 		cout<<"Specify the bucket in S3 for storing this directory: ";
-    	cin>>new_folder;
-       	std::string command="s3cmd mb s3://"+new_folder;
+    		cin>>new_folder;
+       		std::string command="s3cmd mb s3://"+new_folder;
 		system((const char*)command.c_str());
 		cout<<"Input name of sync job: ";
 		cin>>bkpjob;

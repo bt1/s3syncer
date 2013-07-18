@@ -7,7 +7,7 @@ A Linux based tool for syncing your local files with Amazon S3.  This syncer att
 
 	-s3cmd (sudo apt-get install s3cmd)
 	-crontab
-	-an Amazon Web Service account, which can be obtained at http://aws.amazon.com 
+	-an Amazon Web Service account, which can be obtained [here](http://aws.amazon.com) 
 
 ## Instructions
 
@@ -24,7 +24,15 @@ By default, the syncer checks your folder every minute for updates.  Since this 
 
 Select an editor and modify the file accordingly:
 
-<img src="http://codeit.bennytan.net/wp-content/uploads/2013/07/crontab_format.png" />
+	* * * * * *
+	| | | | | | 
+	| | | | | +-- Command to execute
+	| | | | +---- Day of the Week   (range: 1-7, 1 standing for Monday)
+	| | | +------ Month of the Year (range: 1-12)
+	| | +-------- Day of the Month  (range: 1-31)
+	| +---------- Hour              (range: 0-23)
+	+------------ Minute            (range: 0-59)
+
 
 
 

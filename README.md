@@ -29,5 +29,5 @@ Select an editor and modify the file accordingly:
 
 
 
-# License: [bwht.mit-license.org](bwht.mit-license.org)
+# License: [bwht.mit-license.org](http://bwht.mit-license.org)
   
